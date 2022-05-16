@@ -1,3 +1,4 @@
+import MyButton from './src/MyButton';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button} from 'react-native';
 
@@ -10,6 +11,7 @@ export default function App() {
       <Text style={{color:'blue'}}>Hi. react-native</Text>
       <StatusBar style="auto" />
       <Button title="Button" onPress={() =>alert('click!!')}/>
+      <MyButton/>
     </View>
     </>
     
