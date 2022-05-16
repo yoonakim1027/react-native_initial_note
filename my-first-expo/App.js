@@ -1,10 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View} from 'react-native';
 
 export default function App() {
+  console.log("react native app")
   return (
     <View style={styles.container}>
-      <Text>새로운 앱 생성 22.05.15</Text>
+      <Text>새로운 앱 생성 22.05.16</Text>
+      <Text style={{color:'blue'}}>Hi. react-native</Text>
       <StatusBar style="auto" />
     </View>
   );
