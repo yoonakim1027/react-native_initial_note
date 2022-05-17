@@ -7,11 +7,11 @@ export default function App() {
   return (
     <>
     <View style={styles.container}>
-      <Text>새로운 앱 생성 22.05.16</Text>
-      <Text style={{color:'blue'}}>Hi. react-native</Text>
+      <Text>props 버튼 생성 22.05.17</Text>
       <StatusBar style="auto" />
-      <Button title="Button" onPress={() =>alert('click!!')}/>
-      <MyButton/>
+      <MyButton title="My Button title1" onPress={()=> alert('1')}/>
+      <MyButton title="My Button title2" onPress={()=> alert('2')}/>
+
     </View>
     </>
     
