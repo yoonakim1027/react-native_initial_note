@@ -1,5 +1,7 @@
 import react from "react";
 import { TouchableOpacity, View, Text } from "react-native";
+import PropTypes from 'prop-types'
+
 
 const MyButton =({title="title", onPress=()=>{}, children}) => {
     return (
@@ -19,11 +21,18 @@ const MyButton =({title="title", onPress=()=>{}, children}) => {
 // 이렇게 재사용하면서 컴포넌트를 사용할 수 있음 
 
 
+// 객체 형태로 props의 기본값을 설정
 MyButton.defaultProps = {
     title : 'default',
+    // 동작확인을 위한 alert
     onPress : () => alert('default')
 
 
+}
+
+MyButton.PropTypes = {
+    title : PropTypes.string,
+    onPress: PropTypes.func, //onPress는 반드시 함수가 넘어와야한다 
 }
 
 export default MyButton;
