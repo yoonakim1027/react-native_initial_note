@@ -6,11 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>
-        {(()=> {
-          if (name === 'yoona') return 'My name is yoona';
-          else if (name === 'chorong') return 'My name is chorong';
-          else return 'My name is React Native';
-        })()}</Text>
+        My name is {name === 'yoona' ? 'yoona' : 'react native'}</Text>
       <StatusBar style="auto" />
     </View>
   );
