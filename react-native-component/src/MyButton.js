@@ -14,8 +14,9 @@ const MyButton = props => {
             onPress={() => alert("Pressable click!")}
         >
             <Text style={{fontSize : 24}}>
-                {props.title}
-                {/* 부모로부터 전달받은 props인 title 값을 상속받아 사용 */}
+                {props.children ||  props.title}
+                {/* 컴포넌트의 children을 이용, 태그 사이에 있는 값을 출력 */}
+                {/* props에 children이 있다면 title 보다 우선시 되도록 작성 */}
                 </Text>
         </Pressable>
     )

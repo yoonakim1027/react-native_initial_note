@@ -17,6 +17,8 @@ const App = () => {
             {/* <Button title="Button" onPress={() => alert('Click! ')}/> */}
             <MyButton title="Button"/>
             {/* 부모 컴포넌트에서 title값을 Button으로 지정 -> 상속 */}
+
+            <MyButton title="Button">children Props</MyButton>
         </View>
 
     )
