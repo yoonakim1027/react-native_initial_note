@@ -19,6 +19,9 @@ const App = () => {
             {/* 부모 컴포넌트에서 title값을 Button으로 지정 -> 상속 */}
 
             <MyButton title="Button">children Props</MyButton>
+            
+            {/* 사용해야 하는 props의 값을 전달하지 않은 채 컴포넌트 사용 */}
+            <MyButton/> 
         </View>
 
     )
