@@ -34,4 +34,12 @@ MyButton.defaultProps = {
 
 }
 
+
+// 전달받을 props의 타입을 결정하는 PropTypes (npm 설치 필요)
+MyButton.propTypes = {
+    title : PropTypes.string.isRequired, //필수 여부 지정 : .isRequired
+    name : PropTypes.string.isRequired,
+
+}
+
 export default MyButton;
