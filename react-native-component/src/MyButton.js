@@ -1,3 +1,4 @@
+import { object } from 'prop-types';
 import React from 'react';
 import { Pressable, Text } from 'react-native';
 
@@ -36,10 +37,10 @@ MyButton.defaultProps = {
 
 
 // 전달받을 props의 타입을 결정하는 PropTypes (npm 설치 필요)
+// PropTypes 에서 설정 가능한 타입은 문자열(string), 숫자(number), 함수(func), 객체(object), 배열(array) 등 
 MyButton.propTypes = {
     title : PropTypes.string.isRequired, //필수 여부 지정 : .isRequired
-    name : PropTypes.string.isRequired,
-
+    onPress : PropTypes.func.isRequired, // 버튼 클릭 시 함수 전달(필수로 지정)
 }
 
 export default MyButton;

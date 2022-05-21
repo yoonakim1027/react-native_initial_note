@@ -20,8 +20,8 @@ const App = () => {
 
             <MyButton title="Button">children Props</MyButton>
             
-            {/* 사용해야 하는 props의 값을 전달하지 않은 채 컴포넌트 사용 */}
-            <MyButton/> 
+            {/* 기본값을 func로 주었기 때문에, 함수로 전달 */}
+            <MyButton onPress={()=> alert('default')}/> 
         </View>
 
     )
