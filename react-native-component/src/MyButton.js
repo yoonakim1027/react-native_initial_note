@@ -1,7 +1,7 @@
 import React from 'react';
 import { Pressable, Text } from 'react-native';
 
-const MyButton = () => {
+const MyButton = props => {
     return (
         <Pressable
             style={{
@@ -13,7 +13,10 @@ const MyButton = () => {
             }}
             onPress={() => alert("Pressable click!")}
         >
-            <Text style={{fontSize : 24}}>My Button</Text>
+            <Text style={{fontSize : 24}}>
+                {props.title}
+                {/* 부모로부터 전달받은 props인 title 값을 상속받아 사용 */}
+                </Text>
         </Pressable>
     )
 

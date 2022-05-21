@@ -13,13 +13,18 @@ const App = () => {
                 justifyContent : 'center',
             }}
         >
-            <Text style={{fontSize : 30, marginBottom : 10}}>Button Component</Text>
-            <Button title="Button" onPress={() => alert('Click! ')}/>
-            <MyButton/>
+            <Text style={{fontSize : 30, marginBottom : 10}}>Props 속성</Text>
+            {/* <Button title="Button" onPress={() => alert('Click! ')}/> */}
+            <MyButton title="Button"/>
+            {/* 부모 컴포넌트에서 title값을 Button으로 지정 -> 상속 */}
         </View>
 
     )
 
 }
+
+// 1. 현재의 App 컴포넌트(부모 컴포넌트)에서 MyButton 컴포넌트(자식 컴포넌트)로 title 속성에 Button이라는 문자열을 전달
+// 2. MyButton 자식 컴포넌트에서는 전달된 props인 title값을 함수의 파라미터로 받아 사용 가능
+
 
 export default App
